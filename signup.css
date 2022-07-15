@@ -1,0 +1,120 @@
+:root{
+    --clr-graylight:#d37192;
+    --clr-graymed:#a51029;
+    --clr-graydark:#110e0e;
+    --clr-primary:#bd2177;
+    --clr-primaryhover:#ceabb8;
+    --clr-primaryfocus:#8d6975;
+    --clr-primarydark:#000000;
+    --radius: 0.5rem;
+    --padding: 1rem;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
+
+
+body{
+    font-family:cursive;
+    color:var(--clr-graydark);
+}
+
+
+body::before{
+    content:url();
+    display:rgba(240, 239, 241, 0.089);
+    position:absolute;
+    background-blend-mode:multiply;
+    overflow-y:hidden;
+    overflow-y:hidden;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:100;
+
+}
+.wrapper{
+    background:rgb(15, 13, 14);
+    width:20rem;
+    padding:2rem;
+    border-radius:var(--radius);
+    margin:2rem auto;
+    
+}
+
+.title{
+    text-align:center;
+    margin-bottom:1rem;
+    color:rgb(224, 54, 148);
+    text-shadow:#161616 ;
+}
+
+.description{
+    font-size:0.8rem;
+    margin-bottom:1rem;
+    color: white;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin:1rem 0;
+}
+
+.form-label{
+    font-size:0.8rem;
+    margin-bottom:0.2rem;
+    color:rgb(216, 39, 148);
+}
+
+.form-input{
+    border:none;
+    background-color:var(--clr-graylight);
+    border-radius:var(--radius);
+    padding:var(--padding);
+    font-family: inherit;
+    color:inherit;
+    outline:none;
+    border:1px solid rgba(37, 5, 126, 0);
+    box-shadow:0 0 5px rgba(160, 70, 145, 0);
+    transition:250ms all ease-iin;
+}
+.form-input:hover{
+    border:1px solid var(--clr-orimaryhover);
+    box-shadow: 0 0 5px var(--clr-primaryhover);
+    background:rgb(206, 56, 126);
+
+}
+.form-input:focus{
+    border: 1px solid var(--clr-primaryhover);
+    box-shadow: 0 0 5px var(--clr-primaryhover);
+    background:white;
+}
+
+.form-input::placeholder{
+    color:var(--clr-primarydark);
+}
+
+.btn-primary{
+    border:none;
+    background:var(--clr-primary);
+    color:rgb(228, 243, 226);
+    border-radius:var(--radius);
+    padding: var(--padding);
+    margin-top:1rem;
+    font-family:inherit;
+    font-weight:bold;
+    width:16rem;
+    cursor:pointer;
+}
+
+btn-primary:hover{
+    background-color: var(--clr-graydark);
+}
+
